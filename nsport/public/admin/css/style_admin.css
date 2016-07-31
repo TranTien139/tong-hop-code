@@ -1,0 +1,9 @@
+input ,textarea{box-shadow: none!important; outline: none; border-radius: 3px;}
+a:hover{text-decoration: none;}
+.img_upload_expand i{cursor: pointer;}
+#img_upload{display: none;}
+button.but_delete {border:none ; background: transparent ; color: #23527c ;}
+.alert_message{ margin-bottom: -30px; margin-top: 20px;}
+.img_product{ width: 150px; }
+.img_profile {    display: inline-flex;}
+

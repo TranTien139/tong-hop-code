@@ -1,0 +1,74 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 31, 2016 at 03:48 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.21
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `commentsystem`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comment`
+--
+
+CREATE TABLE `comment` (
+  `commentid` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `content` varchar(300) NOT NULL,
+  `comsubid` int(11) NOT NULL,
+  `images` varchar(30) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `comment`
+--
+
+INSERT INTO `comment` (`commentid`, `name`, `content`, `comsubid`, `images`) VALUES
+(3, 'rttr', 'rtrtrt', 0, 'http://www.gravatar.com/avatar'),
+(2, 'rtrtrt', 'rtrtrt', 0, 'http://www.gravatar.com/avatar'),
+(4, 'dsd', 'sdsds', 0, 'http://www.gravatar.com/avatar'),
+(5, 'rtrt', 'rtrt', 4, 'http://www.gravatar.com/avatar'),
+(6, 'argie', 'Nulla cursus arcu nec velit pellentesque in imperdiet dolor imperdiet. Curabitur fermentum commodo velit, at tempus ipsum consectetur non. Quisque nibh odio, vulputate eu suscipit quis, placerat vel sapien. Quisque dapibus vestibulum purus, id malesuada urna gravida aliquet. Class aptent taciti soci', 0, 'http://www.gravatar.com/avatar'),
+(7, 'sdsdsd', 'dsdsdsd', 6, 'http://www.gravatar.com/avatar'),
+(8, 'argie', 'dfdfdfdff', 6, 'http://www.gravatar.com/avatar'),
+(9, 'rtrt', 'rtrtrt', 2, 'http://www.gravatar.com/avatar'),
+(11, 'Tien', 'Xin chao', 3, 'http://www.gravatar.com/avatar'),
+(12, 'Tien', 'day la commet', 0, 'http://www.gravatar.com/avatar');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `comment`
+--
+ALTER TABLE `comment`
+  ADD PRIMARY KEY (`commentid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `comment`
+--
+ALTER TABLE `comment`
+  MODIFY `commentid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

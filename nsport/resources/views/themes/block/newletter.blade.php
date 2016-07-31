@@ -1,0 +1,1 @@
+Email nhận bản tin:  {{ $email }}
